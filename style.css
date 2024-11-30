@@ -2,7 +2,8 @@
 
 body {
     font-family: 'Cabin';
-    background-color: #758190;
+    /* background-color: #758190; */
+    background-image: linear-gradient(to bottom, #758190, #317fde);
 }
 
 #tentacles {
@@ -21,6 +22,11 @@ body {
 
 .stats-container {
     display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.stats-container:hover{
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
@@ -72,4 +78,12 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+    cursor: pointer;
+    transition: 0.25s background-color;
+}
+button:hover{
+    background-color: lightgray;
+}
+button:active{
+    transform: scale(0.95);
 }
